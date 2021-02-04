@@ -15,7 +15,7 @@ html{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 99999;
     background-color: #343a40;
     box-shadow: 0 4px 10px 1px #4b4a4ae5;
     animation: slide 0.9s forwards;
@@ -47,7 +47,7 @@ html{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -82,27 +82,74 @@ html{
   .openbtn{
       background-color:transparent;
   }
-
-
-
-
-
-.CarouselShadow{
+  .win1{
+    width: 100%;
+    max-width: 800px;
+}
+.borderBottom1{
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(to right,#ffc107,#ffc107 20%, #4e4b4b 20%, #4e4b4b 100%);
+}
+.borderBottom2{
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(to right,#ffc107,#ffc107 18%, #4e4b4b 18%, #4e4b4b 100%);
+}
+.borderBottom3{
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(to right,#ffc107,#ffc107 29%, #4e4b4b 29%, #4e4b4b 100%);
+}
+.borderBottom4{
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(to right,#ffc107,#ffc107 34%, #4e4b4b 34%, #4e4b4b 100%);
+}
+.click{
+    padding: 15px 30px;
+    background-color: rgba(224, 217, 217, 0.801);
+    color: rgb(58, 57, 57);
     transition: all 0.5s ease;
-    }
-    .CarouselShadow:hover{
-        box-shadow: 0 4px 10px 1px #888888;
+}
+.click:hover{
+    background-color: #ffc107;
+    color: white;
+}
+.click1{
+    padding: 15px 40px;
     
-    }
-.win1{
-    width: 550px;
-    max-width: 100%;
+    background-color:rgb(58, 57, 57);
+    transition: all 0.5s ease;
+}
+.click1:hover{
+    background-color: #ffc107;
+}
+
+.button1{
+    background-color: #2b2e33;
+    padding: 13px;
+    border-radius: 1px;
+    border: 0;
+    color: #343a40;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+.button1:hover{
+    background-color: #ffc107;
+    color: #ffc107;
+}
+.textarea{
+    width: 100%;
+    height: 140px;
+    background-color: rgba(240, 245, 243, 0.911);
 }
 
 
-.win2{
-    width:330px;
-}
+
+
+
+
 
 
 

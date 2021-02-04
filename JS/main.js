@@ -36,7 +36,7 @@ $('.carousel-slide').owlCarousel({
 var elSiteNav = document.querySelector('.siteNav');
 
 document.addEventListener('scroll',function(){
-            if(window.scrollY>500){
+            if(window.scrollY>300){
                 elSiteNav.classList.add('siteNav-fixed');
                 document.body.style.marginTop=elSiteNav.scrollHeight+ 'px';
             }
@@ -45,4 +45,22 @@ document.addEventListener('scroll',function(){
                 document.body.style.marginTop='0';
             }
 })
- 
+//  var elOpenNav = document.querySelector('.openbtn');
+//  var elCloseNav = document.querySelector('.closebtn');
+
+//  elOpenNav.addEventListener('click',function(){
+//      document.add.style.width='100%';
+//  })
+//  elCloseNav.addEventListener('click',function(){
+//      document.remove.style.
+//  })
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }

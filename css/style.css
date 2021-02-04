@@ -15,10 +15,65 @@ html{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99999;
+    z-index: 100;
     background-color: #fff;
-    box-shadow: 0 4px 10px 1px #888888;
+    box-shadow: 0 4px 10px 1px #cecacab0;
+    animation: slide 0.9s forwards;
 }
+@keyframes slide {
+    from{
+        transform: translateY(-200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .openbtn{
+    background-color:transparent;
+}
+ 
+ 
+  
+  
+
 
 
 
@@ -88,11 +143,9 @@ html{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(77, 76, 76, 0.19);
 }
 .win3{
-    width: 100px;
-    padding: 5px 20px;
+    max-width: 100%;
     background-color: rgba(233, 220, 220, 0.459);
     border: 1px solid white;
-
 }
 .win4{
     width: 350px;
@@ -104,6 +157,22 @@ html{
     padding: 5px;
     border:0; 
 }
+
+.button1{
+    background-color: #ffc107;
+    padding: 10px;
+    border-radius: 1px;
+    border: 0;
+    color: #343a40;
+    transition: all 0.5s ease;
+}
+.button1:hover{
+    background-color: #343a40;
+    color: #ffc107;
+}
+
+
+
 
 .win5{
     width: 260px;
@@ -135,7 +204,7 @@ html{
     width: 270px;
     padding: 20px;
     background-color: rgba(0, 35, 71, 0.5);
-    z-index: 100;
+    z-index: 90;
 }
 .borderRight{
     border-right: 3px solid  #fff;

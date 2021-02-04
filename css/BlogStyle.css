@@ -8,7 +8,7 @@ html{
 }
 
 .siteNav{
-    background-color: transparent;
+    background-color: #EAE5E9;
 }
 .siteNav-fixed{
     position:fixed;
@@ -16,11 +16,10 @@ html{
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: #343a40;
-    box-shadow: 0 4px 10px 1px #4b4a4ae5;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 1px #cecacab0;
     animation: slide 0.9s forwards;
 }
-
 @keyframes slide {
     from{
         transform: translateY(-200px);
@@ -31,23 +30,11 @@ html{
 }
 
 
-
-.imgFluid{
-    width: 100%;
-    height: 400px;
-    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.747),rgba(32, 32, 32, 0.89)),url(../image/banner.jpg);
-    background-size: cover;
-    background-position: center center;
-    
-}
-
-
-
 .sidebar {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 9999;
+    z-index: 999999;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -80,28 +67,81 @@ html{
     margin-left: 50px;
   }
   .openbtn{
-      background-color:transparent;
-  }
-
-
-
-
-
-.CarouselShadow{
-    transition: all 0.5s ease;
-    }
-    .CarouselShadow:hover{
-        box-shadow: 0 4px 10px 1px #888888;
-    
-    }
+    background-color:transparent;
+}
+.firstBgImage{
+    background-image: url(../image/home-banner.webp);
+    background-position: center center;
+    background-size: cover;
+}
 .win1{
-    width: 550px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
 }
 
+.click{
+    padding: 15px 30px;
+    background-color: #f8f9fa;
+    border: 1px solid gray;
+    color: rgb(58, 57, 57);
+    transition: all 0.5s ease;
+}
+.click:hover{
+    background-color: #ffc107;
+    color: white;
+}
+.click1{
+background-color: #ffc107;
+border:0;
+padding: 8px 10px;
 
-.win2{
-    width:330px;
+
+}
+.next{
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.next:hover{
+    background-color: #ffc107;
+}
+.input{
+    outline: none;
+}
+.icon{
+    transition: all 0.5s ease;
+}
+.icon:hover{
+    color: #ffc107;
+}
+
+.addPicture{
+    width: 100%;
+    padding: 70px;
+    text-align: center;
+    max-width: 400px;
+    background-color: #fff;
+}
+
+.LinkHover{
+    color: grey;
+    transition: all 0.5s ease;
+    border-bottom: 1px dashed rgb(78, 78, 78);
+}   
+.LinkHover:hover{
+    color: hsl(45, 100%, 51%);
+    border-bottom:1px dashed #ffc107;
+}
+
+.tagLink{
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.5s ease;
+    border: 1px solid grey;
+}
+
+.tagLink:hover{
+    background-color:#ffc107;
+
 }
 
 
