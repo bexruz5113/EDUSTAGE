@@ -56,9 +56,22 @@
                              <li class="nav-item px-1">
                                  <a class="nav-link text-white" href="Contact.html">Contact</a>
                                </li>
-                               <li class="nav-item pl-3 pr-0">
-                                 <a class="nav-link text-white pl-2 pr-0" href="#"><i class="fa fa-search"></i></a>
-                               </li>
+                               <li>
+                                <button type="button" class="btn btn-transparent" data-toggle="modal" data-target="#exampleModalCenter">
+                                  <i class="fa fa-search text-white"></i>
+                                </button>
+        
+                                <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-4">
+                                        <input type="text" class="w-100 outline-none p-2" placeholder="Search">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </li>
                            </ul>
                      </div>
                      <div class="col-2 d-lg-none py-2">
@@ -93,7 +106,7 @@
               </div> 
             </div>
       <a href="Contact.html">Contact</a>
-      <a href="#"><i class="fa fa-search"></i></a>
+      <div class="text-center"><input type="text" placeholder="Search"></div>
 
     </div>
      <div class="py-5">
@@ -322,8 +335,7 @@
 
 
 
-
-<div class="container-fluid bg-dark py-5">
+ <div class="container-fluid bg-dark py-5">
     <div class="container">
         <div class="row text-white">
           <div class="col-lg-2 col-md-6 col-12 py-4">
@@ -359,14 +371,14 @@
               <h4 class="text py-4">Newsletter</h4>
               <p>You can trust us. we only send promo offers,</p>
               <div>
-                <form class="d-flex justify-content-center align-items-center" action="#">
-                  <input class="py-2 bgColor px-3 border-0 mr-2" type="text" placeholder="Your Email Address">
-                  <a href="#"><button class="btn btn-warning py-2 border-0">SUBSCRIBE</button></a>
+                <form class="d-sm-flex justify-content-sm-start align-items-sm-center d-block" action="#">
+                 <div class="mb-sm-0 mb-3"><input class="py-2 bgColor px-3 border-0 mr-2" type="text" placeholder="Your Email Address"></div>
+                 <div><a href="#"><button class="btn btn-warning py-2 border-0">SUBSCRIBE</button></a></div>
                 </form>
               </div>
             </div>
 
-          <div class="col-lg-8 col-12 py-5 order-lg-1 order-2">
+          <div class="col-lg-8 col-12 pt-5 order-lg-1 order-2">
             <p>Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart-o"></i>  by Colorlib</p>
           </div>
           <div class="col-lg-4 col-12 order-lg-2 order-1 d-flex align-items-center">
